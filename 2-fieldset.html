@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form - Basic</title>
+</head>
+<body>
+    <form method="GET" action="process.php">
+        <fieldset>
+            <legend>Kredensial</legend>
+
+            <div>
+                Nama: <br />
+                <input type="text" name="name" required>
+            </div><br />
+    
+            <div>
+                Email: <br />
+                <input type="email" name="email" required>
+            </div><br />
+    
+            <div>
+                Password: <br />
+                <input type="password" name="password" required min="6">
+            </div><br />
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+            <legend>Detail Pribadi</legend>
+            <div>
+                Foto: <br />
+                <input type="file" name="photo" required accept="image/x-png,image/gif,image/jpeg">
+            </div><br />
+
+            <div>
+                Jenis Kelamin: <br />
+                <input type="radio" name="gender" value="male" required> Laki-laki
+                <input type="radio" name="gender" value="female" required> Perempuan
+            </div><br />
+
+            <div>
+                Hobi: <br />
+                <input type="checkbox" name="hobby" value="football"> Sepak Bola
+                <input type="checkbox" name="hobby" value="surfing"> Surfing
+                <input type="checkbox" name="hobby" value="reading"> Membaca
+                <input type="checkbox" name="hobby" value="other"> Lain-lain
+            </div><br />
+
+            <div>
+                Jurusan: <br />
+                <select name="status" required>
+                    <option value="si">Sistem Informasi</option>
+                    <option value="sk">Sistem Komputer</option>
+                    <option value="mi">Manajemen Informatika</option>
+                </select>
+            </div><br />
+
+            <div>
+                Ceritakan tentang dirimu: <br />
+                <textarea name="about" required placeholder="Ketik di sini..." rows="6" cols="100"></textarea>   
+            </div><br />
+        </fieldset>
+
+        <br />
+        
+        <input type="submit" value="Simpan">
+        <!-- <button>Simpan</button> -->
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
