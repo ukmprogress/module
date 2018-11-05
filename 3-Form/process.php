@@ -1,7 +1,7 @@
 <?php
 /**
- * File ini hanya digunakan untuk menampilkan hasi input suatu form.
- * Dan file ini tidak wajib untuk kalian pelajari.
+ * File ini hanya digunakan untuk memberikan bayangan bagaimana
+ * bentuk data yang terima oleh server yang dikirim dari suatu form.
  * 
  * Cheers :*
  */
